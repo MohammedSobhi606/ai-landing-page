@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&display=swap');
+@import "tailwindcss";
+
+
+
+@theme {
+  --color-c-1: #AC6AFF;
+  --color-c-2: #FFC876;
+  --color-c-3: #FF776F;
+  --color-c-4: #7ADB78;
+  --color-c-5: #858DFF;
+  --color-c-6: #FF98E2;
+
+  --color-n-1: #FFFFFF;
+  --color-n-2: #CAC6DD;
+  --color-n-3: #ADA8C3;
+  --color-n-4: #757185;
+  --color-n-5: #3F3A52;
+  --color-n-6: #252134;
+  --color-n-7: #15131D;
+  --color-n-8: #0E0C15;
+  --color-n-9: #474060;
+  --color-n-10: #43435C;
+  --color-n-11: #1B1B2E;
+  --color-n-12: #2E2A41;
+  --color-n-13: #6C7275;
+  --font-sans: Inter, sans-serif;
+  --font-serif: Oswald, sans-serif;
+
+}
+
+
+
+
+@layer theme {
+  body {
+    @apply font-sans bg-n-8 text-n-1 text-base;
+  }
+}
+
+.rotate-45 {
+  @apply rotate-45;
+}
+
+.rotate-90 {
+  @apply rotate-90;
+}
+
+.rotate-135 {
+  @apply rotate-135;
+}
+
+.rotate-180 {
+  @apply rotate-180;
+}
+
+.rotate-225 {
+  @apply rotate-225;
+}
+
+.rotate-270 {
+  @apply rotate-270;
+}
+
+.rotate-315 {
+  @apply rotate-315;
+}
+
+.rotate-360 {
+  @apply rotate-360;
+}
+
+.-rotate-45 {
+  @apply -rotate-45;
+}
+
+.-rotate-90 {
+  @apply -rotate-90;
+}
+
+.-rotate-135 {
+  @apply -rotate-135;
+}
+
+.-rotate-180 {
+  @apply -rotate-180;
+}
+
+.-rotate-225 {
+  @apply -rotate-225;
+}
+
+.-rotate-270 {
+  @apply -rotate-270;
+}
+
+.-rotate-315 {
+  @apply -rotate-315;
+}
+
+.-rotate-360 {
+  @apply rotate-360;
+}
+
+
+@layer components {
+  .container {
+    @apply max-w-7xl mx-auto px-5 md:px-10 lg:px-15;
+  }
+
+  .h1 {
+    @apply font-semibold text-[2.5rem] leading-[3.25rem] md:text-[2.75rem] md:leading-[3.75rem] lg:text-[3.25rem] lg:leading-[4.0625rem] xl:text-[3.75rem] xl:leading-[4.5rem];
+  }
+
+  .h2 {
+    @apply text-[1.75rem] leading-[2.5rem] md:text-[2rem] md:leading-[2.5rem] lg:text-[2.5rem] lg:leading-[3.5rem] xl:text-[3rem] xl:leading-tight;
+  }
+
+  .h3 {
+    @apply text-[2rem] leading-normal md:text-[2.5rem];
+  }
+
+  .h4 {
+    @apply text-[2rem] leading-normal;
+  }
+
+  .h5 {
+    @apply text-2xl leading-normal;
+  }
+
+  .h6 {
+    @apply font-semibold text-lg leading-8;
+  }
+
+  .body-1 {
+    @apply text-[0.875rem] leading-[1.5rem] md:text-[1rem] md:leading-[1.75rem] lg:text-[1.25rem] lg:leading-8;
+  }
+
+  .body-2 {
+    @apply font-light text-[0.875rem] leading-6 md:text-base;
+  }
+
+  .caption {
+    @apply text-sm;
+  }
+
+  .tagline {
+    @apply font-light text-xs uppercase;
+  }
+
+  .quote {
+    @apply text-lg leading-normal;
+  }
+
+  .button {
+    @apply text-xs font-bold uppercase tracking-wider cursor-pointer;
+  }
+}
