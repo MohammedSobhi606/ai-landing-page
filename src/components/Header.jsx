@@ -9,7 +9,7 @@ export default function Header() {
   return (
     <div className="overflow-hidden ">
       <div
-        className={`fixed top-0 left-0 w-full z-50  border-b border-n-6 lg:bg-n-8/90 lg:backdrop-blur-sm  `}
+        className={`fixed top-0 left-0 w-full z-50  border-b border-n-6  backdrop-blur-sm  `}
       >
         <div className="flex items-center justify-between px-5 lg:px-7.5 xl:px-10 py-4">
           <a className="block w-48 xl:mr-8 mb-0.5" href="#hero">
@@ -96,7 +96,7 @@ function MobilNav({ isMobileNavOpen, setisMobileNavOpen }) {
   }
   return null;
 }
-export const Rings = () => {
+const Rings = () => {
   return (
     <div className="absolute top-1/2 left-1/2 w-[51.375rem] aspect-square border border-n-2/10 rounded-full -translate-x-1/2 -translate-y-1/2">
       <div className="absolute top-1/2 left-1/2 w-[36.125rem] aspect-square border border-n-2/10 rounded-full -translate-x-1/2 -translate-y-1/2"></div>
@@ -105,16 +105,7 @@ export const Rings = () => {
   );
 };
 
-export const SideLines = () => {
-  return (
-    <>
-      <div className="absolute top-0 left-5 w-0.25 h-full bg-n-6"></div>
-      <div className="absolute top-0 right-5 w-0.25 h-full bg-n-6"></div>
-    </>
-  );
-};
-
-export const BackgroundCircles = () => {
+const BackgroundCircles = () => {
   return (
     <>
       <div className="absolute top-[4.4rem] left-16 w-3 h-3 bg-gradient-to-b from-[#DD734F] to-[#1A1A32] rounded-full"></div>

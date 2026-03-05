@@ -2,9 +2,9 @@ import gsap from "gsap";
 import { ReactLenis } from "lenis/react";
 import { useEffect, useRef } from "react";
 
-import Button from "./components/Button";
 import ButtonGradient from "./assets/svg/ButtonGradient";
 import Header from "./components/Header";
+import Hero from "./components/hero/Hero";
 
 function App() {
   const lenisRef = useRef();
@@ -24,6 +24,7 @@ function App() {
       <ReactLenis root options={{ autoRaf: false }} ref={lenisRef} />
       <div className="pt-19 lg:pt-21 overflow-hidden ">
         <Header />
+        <Hero />
       </div>
       {/* graidient ring */}
       <ButtonGradient />
