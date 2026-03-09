@@ -7,50 +7,49 @@ import Button from "./Button";
 export default function Header() {
   const [isMobileNavOpen, setisMobileNavOpen] = useState(false);
   return (
-    <div className="overflow-hidden ">
-      <div
-        className={`fixed top-0 left-0 w-full z-50  border-b border-n-6  backdrop-blur-sm  `}
-      >
-        <div className="flex items-center justify-between px-5 lg:px-7.5 xl:px-10 py-4">
-          <a className="block w-48 xl:mr-8 mb-0.5" href="#hero">
-            <img src={brainwave} width={190} height={40} alt="Brainwave" />
-          </a>
-          <nav className="flex items-center max-lg:hidden">
-            {navigation.map((item) => (
-              <a
-                href={`#`}
-                key={item.id}
-                className={`block relative   uppercase text-n-1/50 transition-colors hover:text-c-1 ${
-                  item.onlyMobile ? "lg:hidden" : ""
-                } px-6   lg:-mr-px text-sm font-semibold`}
-              >
-                {item.title}
-              </a>
-            ))}
-          </nav>
-          <div className="flex items-center gap-8 ">
+    <div
+      className={`fixed top-0 left-0 w-full z-50  border-b border-n-6  backdrop-blur-sm bg-n-8`}
+    >
+      <div className="flex items-center justify-between px-5 lg:px-7.5 xl:px-10 py-4">
+        <a className="block w-48 xl:mr-8 mb-0.5" href="#hero">
+          <img src={brainwave} width={190} height={40} alt="Brainwave" />
+        </a>
+        <nav className="flex items-center max-lg:hidden">
+          {navigation.map((item) => (
             <a
-              href="#signup"
-              className="button hidden text-sm text-n-1/50 transition-colors hover:text-n-1 lg:block"
+              href={`#`}
+              key={item.id}
+              className={`block relative    capitalize text-n-1/50 transition-colors hover:text-c-1 ${
+                item.onlyMobile ? "lg:hidden" : ""
+              } px-6   lg:-mr-px text-sm font-semibold`}
             >
-              New account
+              {item.title}
             </a>
-            <Button className={"max-lg:hidden!"} href="#login">
-              Sign in
-            </Button>
-          </div>
-          {/* mobile buttons */}
-          <Button
-            className={"lg:hidden! z-10"}
-            onClick={() => {
-              setisMobileNavOpen(!isMobileNavOpen);
-            }}
-            px="px-3"
+          ))}
+        </nav>
+        <div className="flex items-center gap-8 ">
+          <a
+            href="#signup"
+            className="button hidden text-sm text-n-1/50 transition-colors hover:text-n-1 lg:block capitalize"
           >
-            <MenuSvg openNavigation={isMobileNavOpen} />
+            New account
+          </a>
+          <Button className={"max-lg:hidden!"} href="#login">
+            Sign in
           </Button>
         </div>
-      </div>{" "}
+        {/* mobile buttons */}
+        <Button
+          className={"lg:hidden! z-10"}
+          onClick={() => {
+            setisMobileNavOpen(!isMobileNavOpen);
+          }}
+          px="px-3"
+        >
+          <MenuSvg openNavigation={isMobileNavOpen} />
+        </Button>
+      </div>
+
       {/* mobile Nav */}
       <MobilNav
         isMobileNavOpen={isMobileNavOpen}
@@ -63,7 +62,7 @@ import { background } from "../assets";
 function MobilNav({ isMobileNavOpen, setisMobileNavOpen }) {
   if (isMobileNavOpen) {
     return (
-      <nav className="flex items-center justify-center font-serif tracking-widest relative h-screen  flex-col gap-12 lg:hidden ">
+      <nav className="flex items-center justify-center font-serif tracking-widest relative h-svh top-0 left-0 flex-col gap-12 lg:hidden bg-n-8">
         {navigation.map((item) => (
           <a
             href={`#`}

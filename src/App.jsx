@@ -5,6 +5,8 @@ import { useEffect, useRef } from "react";
 import ButtonGradient from "./assets/svg/ButtonGradient";
 import Header from "./components/Header";
 import Hero from "./components/hero/Hero";
+import Benefits from "./components/Benefits";
+import { Collaboration } from "./components/Collaboration";
 
 function App() {
   const lenisRef = useRef();
@@ -25,6 +27,8 @@ function App() {
       <div className="pt-19 lg:pt-21 overflow-hidden ">
         <Header />
         <Hero />
+        <Benefits />
+        <Collaboration />
       </div>
       {/* graidient ring */}
       <ButtonGradient />
