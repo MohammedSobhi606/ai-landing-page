@@ -37,7 +37,7 @@ export const Collaboration = () => {
           </p>
 
           <div className="relative left-1/2 flex w-88 aspect-square border border-n-6 rounded-full -translate-x-1/2 scale:75 md:scale-100">
-            <div className="flex w-60 aspect-square m-auto border border-n-6 rounded-full ">
+            <div className="flex w-60 aspect-square m-auto border border-n-6 rounded-full">
               <div className="w-24 aspect-square m-auto p-[0.2rem] bg-conic from-purple-600 to-pink-400 via-cyan-200 to-90%   rounded-full">
                 <div className="flex items-center justify-center w-full h-full bg-n-8 rounded-full">
                   <img
