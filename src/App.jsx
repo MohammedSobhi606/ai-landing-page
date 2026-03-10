@@ -7,6 +7,10 @@ import Header from "./components/Header";
 import Hero from "./components/hero/Hero";
 import Benefits from "./components/Benefits";
 import { Collaboration } from "./components/Collaboration";
+import Services from "./components/servicesSection/Services";
+import Pricing from "./components/pricing/Pricing";
+import Roadmap from "./components/Roadmap";
+import Footer from "./components/Footer";
 
 function App() {
   const lenisRef = useRef();
@@ -29,6 +33,10 @@ function App() {
         <Hero />
         <Benefits />
         <Collaboration />
+        <Services />
+        <Pricing />
+        <Roadmap />
+        <Footer />
       </div>
       {/* graidient ring */}
       <ButtonGradient />

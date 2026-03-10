@@ -300,34 +300,23 @@ export const benefits = [
 ];
 
 export const socials = [
-    {
-        id: "0",
-        title: "Discord",
-        iconUrl: discordBlack,
-        url: "#",
-    },
-    {
-        id: "1",
-        title: "Twitter",
-        iconUrl: twitter,
-        url: "#",
-    },
+
     {
         id: "2",
         title: "Instagram",
         iconUrl: instagram,
-        url: "#",
+        url: "https://www.instagram.com/mohammedsobhi2026/",
     },
     {
         id: "3",
         title: "Telegram",
         iconUrl: telegram,
-        url: "#",
+        url: "https://t.me/moha2000yahoo",
     },
     {
         id: "4",
         title: "Facebook",
         iconUrl: facebook,
-        url: "#",
+        url: "https://www.facebook.com/profile.php?id=100010150261486",
     },
 ];
